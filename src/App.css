@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Modal {
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  width: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  padding: 30px;
+}
+.InputSection {
+  color: #303f96;
+  padding: 6px 0px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.Input {
+  border: none;
+  color: #1f2836;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  margin: 5px 0px 0px 0px;
+  height: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+Input:focus {
+  outline: none;
+}
+.Submit {
+  background-color: #303f96;
   color: white;
+  font-weight: bold;
+  height: 25px;
+  width: 80px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 5px 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.Title {
+  color: #303f96;
+  padding: 0;
+  margin: 0px 0px 10px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ToastNormal {
+  padding: 20px;
+  background-color: rgb(79, 180, 121);
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  border-radius: 8px;
+  color: rgb(255, 246, 246);
+  font-size: 20px;
+  font-weight: 700;
+  top: 320px;
+  left: 700px;
+  /* border: 4px solid rgb(211, 67, 67); */
+}
+.ToastAnormal {
+  padding: 20px;
+  background-color: rgb(204, 83, 83);
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  border-radius: 8px;
+  color: rgb(255, 246, 246);
+  font-size: 20px;
+  font-weight: 700;
+  top: 320px;
+  left: 700px;
+  /* border: 4px solid rgb(211, 67, 67); */
 }
